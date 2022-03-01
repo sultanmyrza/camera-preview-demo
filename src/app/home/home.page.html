@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Blank </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,7 +12,27 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button size="small" (click)="start()">Start Preview</ion-button>
+    <ion-button size="small" (click)="stop()">Stop Preview</ion-button>
+    <ion-button size="small" (click)="flip()">Flip Camera</ion-button>
+    <ion-button size="small" (click)="flip()">Flip Camera</ion-button>
+    <ion-button size="small" (click)="captureSample()">
+      Capture Sample
+    </ion-button>
+    <ion-button size="small" (click)="getSupportedFlashModes()">
+      Get Supported Flash Modes
+    </ion-button>
+    <ion-button size="small" (click)="setFlashMode()">
+      Set Flash Mode
+    </ion-button>
+    <ion-button size="small" (click)="startRecordVideo()">
+      Start Record Video (Android only)
+    </ion-button>
+    <ion-button size="small" (click)="stopRecordVideo()">
+      Stop Record Video (Android only)
+    </ion-button>
+    <ion-button size="small" (click)="setOpacity()">
+      Set Opacity (Android only)
+    </ion-button>
   </div>
 </ion-content>
