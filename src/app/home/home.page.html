@@ -1,38 +1,28 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Blank </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content [fullscreen]="true" class="camera-preview-container">
   <div id="container">
     <ion-button size="small" (click)="start()">Start Preview</ion-button>
     <ion-button size="small" (click)="stop()">Stop Preview</ion-button>
     <ion-button size="small" (click)="flip()">Flip Camera</ion-button>
-    <ion-button size="small" (click)="flip()">Flip Camera</ion-button>
+    <ion-button size="small" (click)="capture()"> Capture </ion-button>
     <ion-button size="small" (click)="captureSample()">
       Capture Sample
     </ion-button>
     <ion-button size="small" (click)="getSupportedFlashModes()">
       Get Supported Flash Modes
     </ion-button>
-    <ion-button size="small" (click)="setFlashMode()">
+    <ion-button color="warning" size="small" (click)="setFlashMode()">
       Set Flash Mode
     </ion-button>
-    <ion-button size="small" (click)="startRecordVideo()">
+    <ion-button color="danger" size="small" (click)="startRecordVideo()">
       Start Record Video (Android only)
     </ion-button>
-    <ion-button size="small" (click)="stopRecordVideo()">
+    <ion-button color="danger" size="small" (click)="stopRecordVideo()">
       Stop Record Video (Android only)
     </ion-button>
-    <ion-button size="small" (click)="setOpacity()">
+    <ion-button color="danger" size="small" (click)="setOpacity()">
       Set Opacity (Android only)
     </ion-button>
+
+    <hr />
   </div>
 </ion-content>
