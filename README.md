@@ -15,6 +15,7 @@
 - CameraPreview.stopRecordVideo() ❌
   - `Property 'stopRecordVideo' does not exist on type 'CameraPreviewPlugin'`
 - CameraPreview.setOpacity() ❌
+  - `throws {"code":"UNIMPLEMENTED"}`
 
 ## On Android:
 

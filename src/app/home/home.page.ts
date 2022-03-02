@@ -102,8 +102,10 @@ export class HomePage {
   async setOpacity() {
     // read more at https://github.com/capacitor-community/camera-preview#setopacityoptions-cameraopacityoptions-promise-------android-only
     // Note: according to docs it's Android only feature
-    // const myCamera = await CameraPreview.start({ enableOpacity: true });
-    // myCamera.setOpacity({ opacity: 0.4 });
-    alert('Not implemented');
+    try {
+      await CameraPreview.setOpacity({ opacity: 0.3 });
+    } catch (error) {
+      alert(JSON.stringify(error));
+    }
   }
 }
